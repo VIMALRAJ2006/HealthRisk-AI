@@ -1,0 +1,56 @@
+{
+  "rows": 5000,
+  "features": [
+    "age",
+    "gender",
+    "bmi",
+    "blood_pressure",
+    "glucose",
+    "cholesterol",
+    "smoker"
+  ],
+  "data_path": "E:\\HealthRisk-AI\\data\\synthetic_healthcare_data.csv",
+  "classifier_path": "E:\\HealthRisk-AI\\models\\patient_risk_classifier.joblib",
+  "regressor_path": "E:\\HealthRisk-AI\\models\\insurance_cost_regressor.joblib",
+  "classification": {
+    "accuracy": 0.854,
+    "report": {
+      "High": {
+        "precision": 0.717391304347826,
+        "recall": 0.8148148148148148,
+        "f1-score": 0.7630057803468208,
+        "support": 81.0
+      },
+      "Low": {
+        "precision": 0.9232283464566929,
+        "recall": 0.8766355140186916,
+        "f1-score": 0.8993288590604027,
+        "support": 535.0
+      },
+      "Medium": {
+        "precision": 0.7975,
+        "recall": 0.8307291666666666,
+        "f1-score": 0.8137755102040817,
+        "support": 384.0
+      },
+      "accuracy": 0.854,
+      "macro avg": {
+        "precision": 0.8127065502681731,
+        "recall": 0.8407264985000577,
+        "f1-score": 0.8253700498704352,
+        "support": 1000.0
+      },
+      "weighted avg": {
+        "precision": 0.8582758610065047,
+        "recall": 0.854,
+        "f1-score": 0.8554342037237753,
+        "support": 1000.0
+      }
+    }
+  },
+  "regression": {
+    "mae": 1231.92,
+    "rmse": 1540.84,
+    "r2": 0.8646
+  }
+}
